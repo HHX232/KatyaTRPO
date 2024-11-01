@@ -1,0 +1,22 @@
+.footer__grid{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+}
+.footer__nav-list{
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+.footer__socials{
+   display: flex;
+   gap: 22px;
+   margin-top: 20px;
+}
+.link-bold{
+   color: $accent;
+   font-weight: 600;
+}
+.footer{
+   background-color: #2D343C;
+   padding: 25px 10px 15px;
+}

@@ -1,0 +1,124 @@
+.apartments__cards{
+   position: relative;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 30px;
+column-gap: 30px;
+}
+.apartments__title{
+margin-bottom: 88px;
+}
+.apartments{
+   margin-top: 120px;
+}
+.apartments{
+   position: relative;
+   &::after{
+      content: "III";
+      top: 0; 
+      right: calc(50% + 675px);
+      transform: translate(50%, 0%);
+      opacity: 0.02;
+      font-size: 400px;
+      font-family: $font-accent;
+      position: absolute;
+      line-height: 1,15;
+     
+   }
+}
+
+.apartament__card-info {
+   position: absolute;
+   content: "";
+   z-index: 20;
+   padding: 10px ;
+   background-color: #2A3440;
+   display: none;
+   max-height: 520px;
+   // margin: auto auto auto auto;
+}
+.apartament__card-info--active {
+  left: 25%;
+
+  top: 10%;
+   display: block;
+}
+.apartament__card-inner {
+   position: relative;
+   display: flex;
+   column-gap: 20px;
+
+}
+.apartament__card-images {
+   display: flex;
+height: auto;
+   justify-content: space-between;
+   flex-direction: column;
+   width: fit-content;
+}
+.apartament__card-image {
+   min-width: 170px;
+   min-height: 170px;
+   max-width: 250px;
+   max-height: 250px;
+   aspect-ratio: 1.2/1;
+   width: 20vw;
+}
+.apartament__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;  
+  
+}
+.apartament__card-title {
+   font-size: 24px;
+   text-align: center;
+   // margin-right: 70px;
+   margin-right: 80px;
+   & span{
+      color: $accent;
+   }
+}
+.apartament__card-list {
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+  
+}
+.card__list-item {
+   display: flex;
+   gap: 10px;
+   align-items: center;
+   font-size: 20px;
+   & span{
+      color: $accent;
+      font-weight: 500;
+   }
+}
+.apartament__card-btn {
+   font-size: 22px;
+   color: $accent;
+   padding: 12px 55px;
+   border: 1px solid $accent;
+   border-radius: 10px;
+   max-width: fit-content;
+   cursor: pointer;
+   transition: all .3s;
+   &:hover{
+      color: #ffff;
+   }
+}
+
+.close-icon {
+   position: absolute;
+   right: 10px;
+   left: auto;
+   top: 10px;
+z-index: 30;
+cursor: pointer;
+transition: all .5s;
+&:hover{
+   transform: rotate(90deg) scale(1.15);
+   
+}
+}

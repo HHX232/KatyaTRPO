@@ -1,0 +1,25 @@
+.section__map{
+   padding: 180px 0;
+   position: relative;
+   &::after{
+      content: "V";
+      top: 180px;
+      right: calc(50% + 555px);
+      transform: translate(50%, 0%);
+      opacity: 0.02;
+      font-size: 400px;
+      font-family: $font-accent;
+      position: absolute;
+      line-height:1 ;
+     z-index: -1;
+   }
+}
+.section-map__title {
+margin-bottom: 88px;
+}
+
+
+.map {
+   background-color: #626262;
+   height: 358px;
+}

@@ -1,0 +1,125 @@
+.calculate .container{
+   max-width: 1490px;
+
+}
+.calculate__tabs {
+   display: flex;
+   margin-bottom: 30px;
+   column-gap: 60px;
+}
+.calculate__tab {
+   font-family: $font-accent;
+   font-size: 29px;
+   font-weight: 600;
+}
+.calculate__tab--active {
+   text-decoration: underline;
+}
+.calculate__content-item {
+   display: none;
+   
+}
+.calculate__content-item--active {
+   display: flex;
+   justify-content: space-around;
+   gap: 40px;
+   flex-wrap: wrap;
+}
+.inputs__list {
+   &-rent{
+      grid-template-columns: repeat(1, minmax(300px, 1fr));
+   }
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   grid-template-rows: repeat(auto, 1fr);
+   column-gap: 60px;
+   row-gap: 30px;
+   flex-wrap: wrap;
+   max-width: 50%;
+}
+.inputs__list-item {
+   width: 100%;
+}
+.inputs__list-subtitle {
+   font-size: 20px;
+   margin-bottom: 7px;
+   color: #fff;
+}
+.inputs__list-input {
+   background: rgba(190, 190, 190, 0.3);
+   color: rgb(190, 190, 190);
+font-size: 25px;
+line-height: 27px;
+letter-spacing: 10%;
+padding: 18px 25px;
+width: 100%;
+}
+.input__calc-btn{
+   margin: 20px auto 0px auto;
+   text-align: center;
+   padding: 10px 0;
+   border: 2px solid $accent;
+   font-size: 25px;
+   transition: all .3s;
+   width: 90%;
+   &:hover{
+      background-color: $accent;
+      font-weight: 500;
+   }
+}
+input:focus{
+   outline: 2px solid $accent;
+}
+
+
+.input__result {
+   width: 40%;
+   min-width: 360px;
+   padding: 17px 23px;
+   background: rgba(190, 190, 190, 0.3);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.input__result-subtitle {
+   color: $accent;
+   text-align: center;
+   font-size: 30px;
+   font-weight: 500;
+   margin-bottom: 20px;
+}
+.input__result-list {
+   display: flex;
+   flex-direction: column;
+   gap: 26px;
+}
+.input__result-item { 
+   display: flex;
+   justify-content: space-between;
+   padding-top: 15px;
+   border-top: 1px solid $accent;
+   align-items: center;
+
+}
+.result__item-text, .result__item-number{
+   font-size: 25px;
+   line-height: 27px;
+}
+.result__item-number {
+}
+.input__result-btn {
+   width: 70%;
+   margin: 20px auto 0px auto;
+   text-align: center;
+   padding: 15px 0;
+   border: 2px solid $accent;
+   font-size: 25px;
+   transition: all .3s;
+   &:hover{
+      background-color: $accent;
+      font-weight: 500;
+   }
+}
+.input__result-rent{
+   padding: 23px 23px 40px 23px;
+}

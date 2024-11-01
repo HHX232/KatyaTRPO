@@ -1,0 +1,30 @@
+.benefits{
+position: relative;
+&::after{
+   content: "II";
+   left: calc(50% + 555px);
+   transform: translate(-50%, -27%);
+   @include decorNumber
+}
+
+   &__row{
+      display: flex;
+      gap: 70px;
+   }
+
+   &__item{
+      text-align: center;
+   }
+
+   &__item-img{
+      margin-bottom: 53px;
+   }
+
+   &__item-text{
+      font-size: 20px;
+      line-height: 1.35;
+      font-family:$font-secondary;
+      font-weight: 300;
+   }
+   
+}

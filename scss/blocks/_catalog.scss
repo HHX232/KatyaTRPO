@@ -1,0 +1,215 @@
+.catalog{
+   position: relative;
+   &::after{
+      content: "V";
+      top: 0; 
+      right: calc(50% + 675px);
+      transform: translate(50%, 0%);
+      opacity: 0.02;
+      font-size: 400px;
+      font-family: $font-accent;
+      position: absolute;
+      line-height: 1,15;
+     z-index: 0;
+   }
+}
+.catalog .container{
+   max-width: 1490px;
+}
+.catalog .title-2{
+   margin-bottom: 10px;
+}
+.catalog__batons {
+
+   display: flex;
+   column-gap: 25px;
+   font-size: 27px;
+font-weight: 400;
+   margin-bottom: 35px;
+   cursor: pointer;
+   font-family: $font-accent;
+   &-item{
+      z-index: 20;
+   }
+   &-item--active{
+      text-decoration:underline;
+   }
+}
+.catalog__batons-filter {
+   margin-left: auto;
+   display: flex;
+   gap:11px;
+   align-items: center;
+}
+// .characters__item-text{
+//    display: flex;
+// }
+.area__box{
+   display: flex;
+   gap: 4px;
+   align-items: center;
+}
+.catalog__content-item {
+   padding: 0 10px;
+   margin: 0 auto 20px auto;
+   display: none;
+   & .card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+      gap: 8px;
+      min-width: 20.5vw;
+      max-width: 365px;
+      background-color: #2B3948;
+      border: 1px solid #394450;
+      margin: 0 auto;
+      position: relative;
+      border-radius: 7px;
+   }
+   & .card::before{
+      display: none;
+   }
+   & .card:hover::after{
+      display: none;
+   }
+}
+.mini__info{
+   position: absolute;
+   content: "";
+   left: 15px;
+   top: 15px;
+   display: flex;
+   flex-direction: column;
+   row-gap: 15px;
+   z-index: 10;
+   &-text{
+      color: #ffff;
+      background-color: #2B3948;
+      display: none;
+      &--active{
+         display: block;
+         max-width: 90%;
+         padding: 15px;
+         font-size: 20px;
+      }
+   }
+
+}
+.button-info{
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+   transition: all .3s;
+   &:hover{
+      width: 35px;
+      height: 35px;
+   }
+
+}
+.catalog__content-item{
+   border: 5px solid #1E2227;
+   padding: 10px;
+   max-height: 90vh;
+   overflow-y: scroll;
+   background-color: #1E2227;
+   border-radius:10px ;
+}
+.catalog__content-item--active {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+   column-gap: 90px;
+   row-gap: 40px;
+   align-items: center;
+}
+
+.catalog__item-title {
+   font-size: 30px;
+   font-weight: 500;
+   color: $accent;
+   font-family: $font-accent;
+   margin-top: 10px;
+}
+.catalog__item-characters {
+   display: flex;
+   column-gap: 40px;
+   margin: 0 auto;
+   align-items: center;
+}
+.catalog__characters-item {
+   font-family: $font-main;
+   font-size: 21px;
+text-align: center;}
+.characters__item-img {
+width: 27px;
+height: 27px;
+}
+
+.card__btn {
+font-family: $font-main;
+font-size: 22px;
+padding: 12px 44px;
+border: 1px solid $accent;
+border-radius: 10px;
+z-index: 10;
+transition: color .3s;
+margin-top: 20px;
+&:hover{
+   color: $accent;
+}
+}
+.filter__box {
+   position: absolute;
+   content: "";
+   top: 0;
+   right: 100%;
+   background-color: #1f2a35;
+   z-index: 20;
+   padding: 15px 10px;
+   border-radius: 10px;
+   display: none;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   gap: 20px;
+   cursor: default;
+   &--active{
+      display: flex;
+   }
+}
+.filter__box-subtitle {
+   font-size: 24px;
+   color: $accent;
+   cursor: default;
+}
+.filter__min, .filter__max {
+   // font-size: 20px;
+   max-width: 90%;
+   background-color: #394450;
+   padding: 5px 10px;
+}
+
+.filter__box-button {
+   padding: 5px 20px;
+   background-color: transparent;
+   color: $accent;
+   border: 1px solid $accent;
+   transition: all .3s;
+   &:hover{
+      background-color: $accent;
+      color: #ffff;
+   }
+}
+
+.area__inputs {
+   display: flex;
+   gap: 10px;
+}
+.filter__min-area, .filter__max-area {
+   max-width: 140px;
+   background-color: #394450;
+   padding: 5px 10px;
+}
+
