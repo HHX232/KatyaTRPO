@@ -1,4 +1,4 @@
-const mailPath = '../mail.php'
+const mailPath = 'mail.php'
 
 document.querySelectorAll('.uniForm').forEach( (e) => {
 
