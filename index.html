@@ -302,9 +302,17 @@
                         <p>ЖК LoftHouse – это проект бизнес-класса, расположенный вблизи города Минск, на берегу Заславского водохранилища. Комплекс предлагает своим жильцам дома и квартиры площадью от 40 до 470 кв. м. В комплексе  три секции, в которых разместится всего 12 домов и 22 квартиры.</p>
                     </div>
 
+                    <!-- form 1 start -->
                     <form action="" class="cta__form form">
-                        <input type="text" class="form__input" placeholder="Ваше имя" autocomplete="off">
-                        <input data-tel-input type="text" class="form__input" placeholder="Ваш телефон" autocomplete="off">
+
+	<!-- Hidden Required Fields -->
+    <input type="hidden" name="project_name" value="LoftHouse">
+    <input type="hidden" name="admin_email" value="pcutasu@mailto.plus">
+    <input type="hidden" name="form_subject" value="top form">
+    <!-- END Hidden Required Fields -->
+
+                        <input name="Имя" type="text" class="form__input" placeholder="Ваше имя" autocomplete="off">
+                        <input name="Телефон" data-tel-input type="text" class="form__input" placeholder="Ваш телефон" autocomplete="off">
 
                         <p class="form__privacy form__privacy--bottom">
                             *Мы никому не передаем ваши данные. <br>И не сохраняем ваш номер в базу.
@@ -312,6 +320,8 @@
 
                         <button type="submit" class="form__btn">Посмотреть район</button>
                     </form>
+                    <!-- form 1 end -->
+
                 </div>
             </div>
         </section>
@@ -343,6 +353,7 @@
                 <div class="feedback__title">
                     <h2 class="title-2">Есть вопросы?</h2>
                 </div>
+                <!-- form 2 start -->
                 <form class="feedback__form form">
 
                     <p class="form__privacy form__privacy--bottom">
@@ -354,6 +365,7 @@
 
                     <button type="submit" class="form__btn">Посмотреть район</button>
                 </form>
+                <!-- form 2 end -->
             </div>
         </section>
     <section class="catalog" id="catalog">
@@ -916,6 +928,10 @@
 
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=3ef580e9-615a-4135-9e25-80c2e197590f&lang=ru_RU" type="text/javascript"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
 
     <script src="./libs/phoneMask/mask.js"></script>
     <script src="./libs/phoneMask/mask_list.js"></script>
