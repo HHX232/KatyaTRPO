@@ -8,7 +8,7 @@ document.querySelectorAll('.uniForm').forEach( (e) => {
 		    params  = new FormData(this),
 		    request = new XMLHttpRequest()
 
-		request.open('POST', mailPath, true)
+		request.open('GET', mailPath, true)
 		request.send(params)
 
 		request.onreadystatechange = function() {
